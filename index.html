@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hotkek_ Online by Adebayo Afeez - EdTech Web Developer, Builder of City Hill College Result Checker App, Owner of Hotkek_ Lessons and Hotkek_ Wears (CAC Since 2021).">
+<title>Hotkek_ Online | Empowering Minds. Enabling Digital Skills. Building Brands.</title>
+<style>
+:root{--purple:#4c247e;--deep:#351553;--light:#f5effa;--gold:#d5aa3e;--gold-light:#fbf5e5;--ink:#241b2e;--muted:#665b72;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.98);border-bottom:1px solid #eee7f4;box-shadow:0 2px 12px rgba(76,36,126,0.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:95px}
+.brand{display:flex;align-items:center;gap:16px;color:var(--purple);font-weight:800;font-size:1.2rem}
+.brand-logo-banner{
+  width:min(380px,70vw);
+  height:auto;
+  max-height:85px;
+  object-fit:contain;
+  background:transparent;
+  border:none;
+  border-radius:0;
+  padding:0;
+  display:block;
+  filter: drop-shadow(0 2px 6px rgba(76,36,126,0.15));
+}
+.navlinks{display:flex;align-items:center;gap:22px;font-size:.94rem}.navlinks a:hover{color:var(--purple)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}.btn-primary{background:var(--purple);color:#fff}.btn-primary:hover{background:var(--deep);transform:translateY(-1px)}.btn-outline{border-color:var(--gold);color:var(--purple);background:#fff}.btn-outline:hover{background:var(--gold-light)}.menu{display:none;border:0;background:var(--light);color:var(--purple);padding:10px;border-radius:8px;font-size:1.2rem;cursor:pointer}
+.hero{padding:70px 0 50px;background:radial-gradient(circle at 90% 15%,#f0e4fb 0,transparent 28%),linear-gradient(180deg,#fff 0%,#fcfaff 100%)}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--purple);background:var(--light);border-radius:99px;padding:7px 12px;font-weight:700;font-size:.82rem}.dot{width:8px;height:8px;background:var(--gold);border-radius:50%}
+h1{font-size:clamp(2.4rem,5vw,4.2rem);line-height:1.07;letter-spacing:-.045em;color:var(--deep);margin:18px 0}h1 span{color:var(--purple)}.hero p{font-size:1.05rem;color:var(--muted);max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}.trust{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.88rem;margin-top:18px}
+.hero-card{background:var(--purple);color:#fff;border-radius:22px;padding:26px;position:relative;overflow:hidden;box-shadow:0 20px 50px #4c247e24}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;position:relative;z-index:1}.badge-gold{background:var(--gold);color:#2f1c42;border-radius:99px;padding:6px 10px;font-size:.72rem;font-weight:800}
+.hero-card h2{font-size:1.55rem;line-height:1.2;margin:22px 0 8px;position:relative;z-index:1}.hero-card>p{color:#e5d9f1;font-size:.93rem;position:relative;z-index:1}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;position:relative;z-index:1}.stat{background:#ffffff12;border:1px solid #ffffff1c;border-radius:12px;padding:14px}.stat strong{display:block;color:var(--gold);font-size:1.35rem}.stat span{font-size:.78rem;color:#e5d9f1}
+section{padding:70px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 36px}.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;color:#9a741c}.section-head h2{font-size:clamp(1.9rem,3vw,2.6rem);color:var(--deep);line-height:1.15;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.ventures{background:#fff;border-top:1px solid #f3ecfa;border-bottom:1px solid #f3ecfa}
+.venture-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:900px;margin:0 auto}
+.venture-card{background:#fff;border:1px solid #eee6f5;border-radius:20px;padding:22px;text-align:center;transition:.2s}
+.venture-card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #35155312}
+.venture-card img{width:100%;max-width:240px;height:140px;object-fit:contain;background:#fcfaff;border-radius:12px;border:1px solid #f0e4fb;padding:8px;margin:0 auto 14px;display:block}
+.venture-card h3{margin:6px 0;color:var(--deep)}.venture-card p{color:var(--muted);font-size:.92rem;margin:0 0 10px}.venture-card small{color:#8a6714;font-weight:700;letter-spacing:.04em}
+.courses{background:#fcfaff}.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.course{background:#fff;border:1px solid #eee6f5;border-radius:16px;padding:22px;transition:.2s}.course:hover{transform:translateY(-3px);box-shadow:0 14px 30px #35155310}.course-icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--light);color:var(--purple);font-size:1.25rem}.course h3{margin:14px 0 6px;color:var(--deep)}.course p{color:var(--muted);font-size:.92rem;margin:0}.course small{display:block;color:#8a6714;margin-top:12px;font-weight:700}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:850px;margin:auto}.price-card{border:1px solid #e9dff2;border-radius:20px;padding:28px;background:#fff}.price-card.featured{background:var(--purple);color:#fff;border-color:var(--purple);box-shadow:0 18px 40px #4c247e20}.price-card h3{margin:0 0 6px}.price-card p{color:var(--muted)}.price-card.featured p{color:#e5d9f1}.price{font-size:2.3rem;font-weight:900;letter-spacing:-.04em;color:var(--purple);margin:10px 0}.featured .price{color:var(--gold)}.price span{font-size:.9rem;font-weight:500}.price-card ul{padding-left:18px;color:var(--muted);margin:18px 0}.featured ul{color:#f3eaf9}.price-card li{margin:8px 0}.price-card .btn{width:100%}
+.about{background:var(--gold-light)}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center}.about-art{background:var(--purple);border-radius:22px;min-height:400px;display:grid;place-items:center;position:relative;overflow:hidden}.about-logo{position:relative;z-index:1;width:min(88%,360px);height:380px;object-fit:cover;border-radius:18px;border:3px solid var(--gold);box-shadow:0 12px 30px #170b2b55}.about-copy h2{font-size:2.2rem;line-height:1.15;color:var(--deep);margin:10px 0 14px}.about-copy p{color:var(--muted)}.about-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.point{display:flex;gap:8px;align-items:flex-start;font-weight:650;font-size:.9rem}.check{color:#9a741c;font-weight:900}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px}.contact-copy h2{font-size:2.3rem;line-height:1.1;color:var(--deep);margin:10px 0}.contact-copy p{color:var(--muted)}.contact-item{display:flex;gap:10px;align-items:center;margin-top:16px}.contact-icon{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--light);color:var(--purple)}.contact-item small{display:block;color:var(--muted)}.contact-form{padding:26px;border:1px solid #eee6f5;border-radius:18px;box-shadow:0 12px 30px #35155308}.field{margin-bottom:14px}.field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #ddd2e8;border-radius:9px;font:inherit;background:#fff;color:var(--ink)}.field textarea{min-height:100px;resize:vertical}.contact-form .btn{width:100%}.form-note{font-size:.76rem;color:var(--muted);margin-bottom:0}
+.social-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.social-btn{display:inline-flex;align-items:center;gap:5px;padding:7px 12px;border-radius:99px;background:var(--light);border:1px solid #e9dff2;font-weight:700;font-size:.82rem;color:var(--purple);transition:.2s}.social-btn:hover{background:var(--purple);color:#fff;border-color:var(--purple)}
+footer{background:#28113f;color:#eee5f7;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.footer-row small{color:#c8b7d9}.footer-brand{font-weight:800;color:var(--gold)}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:95px;left:0;right:0;padding:18px 4%;background:#fff;border-bottom:1px solid #eee6f5;flex-direction:column;align-items:stretch;gap:14px}.navlinks.open{display:flex}.menu{display:block}.hero{padding-top:42px}.hero-grid,.about-grid,.contact-grid,.venture-grid{grid-template-columns:1fr}.hero-grid{gap:28px}.course-grid{grid-template-columns:repeat(2,1fr)}.about-art{min-height:300px}.about-logo{height:300px}.contact-grid{gap:18px}.brand-logo-banner{width:min(280px,75vw);max-height:70px}}
+@media(max-width:520px){.course-grid,.pricing-grid{grid-template-columns:1fr}.hero-card{padding:20px}.about-points{grid-template-columns:1fr}.nav{min-height:80px}.navlinks{top:80px}section{padding:54px 0}h1{font-size:2.5rem}.brand-logo-banner{width:min(240px,80vw);max-height:60px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><img class="brand-logo-banner" src="hotkek_online_logo.png" alt="Hotkek_ Online Banner Logo"></a>
+    <button class="menu" id="menuButton" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#ventures">Ventures</a>
+      <a href="#courses">Courses</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="https://wa.me/2348112168294" target="_blank">Chat on WhatsApp ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Hotkek_ Online · EdTech Web Developer · Education • Fashion</span>
+      <h1>Empowering Minds. <span>Enabling Digital Skills. Building Brands.</span></h1>
+      <p>Welcome to Hotkek_ Online - The official hub for my two business ventures: Hotkek_ Lessons and Hotkek_ Wears. I'm Adebayo Afeez, EdTech Web Developer, Builder of City Hill College Result Checker App, Digital Technology, ICT and Commerce Teacher at City Hill College teaching over 260 students, and Entrepreneur Owner of HOTKEK_WEARS Since 2021 (Registered under CAC Nigeria).</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#ventures">See My Ventures →</a>
+        <a class="btn btn-outline" href="Adebayo_Afeez_CV.pdf" download>Download My CV ↓</a>
+        <a class="btn btn-outline" href="#contact">Let's talk</a>
+      </div>
+      <div class="trust"><span>✓ Web Developer</span><span>✓ Over 260 Students</span><span>✓ CAC Since 2021</span><span>✓ Result Checker App Builder</span></div>
+      <div class="social-row">
+        <a class="social-btn" href="https://github.com/hotkek-online" target="_blank">GitHub: hotkek-online</a>
+        <a class="social-btn" href="https://www.linkedin.com/in/adebayo-afeez-90b252147" target="_blank">LinkedIn</a>
+        <a class="social-btn" href="https://x.com/hotkek_online_" target="_blank">X: hotkek_online_</a>
+        <a class="social-btn" href="https://wa.me/2348112168294" target="_blank">WhatsApp: 08112168294</a>
+        <a class="social-btn" href="Adebayo_Afeez_CV.pdf" target="_blank" style="background:var(--purple);color:#fff">📄 My CV</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="card-top"><span class="badge-gold">HOTKEK_ ONLINE</span><span style="color:var(--gold);font-weight:900">H✦</span></div>
+      <h2>EdTech Web Developer. Educator. Entrepreneur.</h2>
+      <p>Builder of City Hill College Result Checker App. Teaching practical tech skills and building brands that last.</p>
+      <div class="stats">
+        <div class="stat"><strong>260+</strong><span>Students Currently Taught</span></div>
+        <div class="stat"><strong>Since 2021</strong><span>HOTKEK_WEARS - CAC Registered</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="ventures" id="ventures">
+  <div class="container">
+    <div class="section-head"><span class="kicker">My Business Ventures</span><h2>Owner of Two Brands Under Hotkek_ Online</h2><p>I run two registered ventures: Education and Fashion, both under the Hotkek_ Online umbrella.</p></div>
+    <div class="venture-grid">
+      <div class="venture-card"><img src="hotkek_lessons_logo.jpeg" alt="Hotkek Lessons Logo"><h3>Hotkek_ Lessons</h3><p>Your Skill, Our Priority. EdTech platform by a Web Developer who built City Hill College Result Checker App.</p><small>LEARN • BUILD • GROW</small><div style="margin-top:12px"><a class="btn btn-outline" href="#courses" style="padding:8px 14px;font-size:.85rem;border-radius:99px">Explore Lessons →</a></div></div>
+      <div class="venture-card"><img src="hotkek_wears_logo.jpeg" alt="Hotkek Wears Logo"><h3>Hotkek_ Wears</h3><p>Entrepreneur Owner Since 2021. Registered under Corporate Affairs Commission (CAC) Nigeria. Clothes, Shoes & Accessories.</p><small>CLOTHES • SHOES • ACCESSORIES</small><div style="margin-top:12px"><a class="btn btn-primary" href="https://wa.me/2348112168294" target="_blank" style="padding:8px 14px;font-size:.85rem;border-radius:99px">Shop on WhatsApp →</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="courses" id="courses">
+  <div class="container">
+    <div class="section-head"><span class="kicker">What you can learn & shop</span><h2>Build skills that move you forward</h2><p>Choose a learning path from Hotkek_ Lessons under Hotkek_ Online.</p></div>
+    <div class="course-grid">
+      <article class="course"><div class="course-icon">⌘</div><h3>Web Development</h3><p>Learn how websites are planned, designed, and built.</p><small>DESIGN • CODE • LAUNCH</small></article>
+      <article class="course"><div class="course-icon">▣</div><h3>App Development</h3><p>Creating useful applications and digital experiences like my Result Checker App.</p><small>IDEA • BUILD • TEST</small></article>
+      <article class="course"><div class="course-icon">▥</div><h3>Data Analysis</h3><p>Organise, interpret, and communicate insights from data.</p><small>DATA • INSIGHT • ACTION</small></article>
+      <article class="course"><div class="course-icon">↗</div><h3>Digital Marketing</h3><p>Digital channels, audiences, and marketing strategy.</p><small>REACH • ENGAGE • GROW</small></article>
+      <article class="course"><div class="course-icon">⌑</div><h3>Cybersecurity</h3><p>Online safety, security principles, and digital protection.</p><small>PROTECT • LEARN • PRACTISE</small></article>
+      <article class="course"><div class="course-icon">✓</div><h3>JAMB & WAEC CBT Prep</h3><p>CBT navigation and confidence for exam day.</p><small>PRACTISE • PREPARE • PERFORM</small></article>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Simple pricing</span><h2>Choose how you want to learn</h2><p>Start with a quick class or commit to the full three-month course.</p></div>
+    <div class="pricing-grid">
+      <article class="price-card"><h3>Quick Class</h3><p>Focused help with a topic.</p><div class="price">₦5,000 <span>/ hour</span></div><ul><li>One-hour session</li><li>Focused guidance</li><li>Ask questions</li></ul><a class="btn btn-outline" href="#contact" data-course="Quick Class">Book a quick class</a></article>
+      <article class="price-card featured"><h3>Full Course</h3><p>Structured journey over three months.</p><div class="price">₦100,000 <span>/ course</span></div><ul><li>Three-month window</li><li>Choose training area</li><li>Practical learning</li></ul><a class="btn btn-primary" style="background:var(--gold);color:#2f1c42" href="#contact" data-course="Full Course">Enquire about course</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-art"><img src="founder.jpg" alt="Adebayo Afeez - Founder" class="about-logo"></div>
+    <div class="about-copy">
+      <span class="kicker">Meet The Founder - Web Developer</span>
+      <h2>Meet Adebayo Afeez - EdTech Web Developer</h2>
+      <p>I'm the owner of two business ventures under Hotkek_ Online: <strong>Hotkek_ Lessons</strong> and <strong>Hotkek_ Wears</strong>. I graduated from the University of Ibadan and currently serve as a Digital Technology, ICT, and Commerce Teacher at City Hill College, where I teach over 260 students.</p>
+      <p>As a Web Developer, I am the builder of <strong>City Hill College Result Checker App</strong> - digitizing result checking for students. As an entrepreneur, I am the owner of <strong>HOTKEK_WEARS Since 2021</strong> (a registered company under Corporate Affairs Commission - CAC in Nigeria) specializing in Clothes, Shoes & Accessories.</p>
+      <div class="about-points">
+        <div class="point"><span class="check">✓</span><span>EdTech Web Developer - Result Checker App Builder</span></div>
+        <div class="point"><span class="check">✓</span><span>University of Ibadan graduate</span></div>
+        <div class="point"><span class="check">✓</span><span>Owner HOTKEK_WEARS - CAC Since 2021</span></div>
+        <div class="point"><span class="check">✓</span><span>Digital Tech, ICT, Commerce - City Hill College</span></div>
+        <div class="point"><span class="check">✓</span><span>Teaching Over 260 Students</span></div>
+        <div class="point"><span class="check">✓</span><span>Educator • Web Developer • Entrepreneur • Innovator</span></div>
+      </div>
+      <div style="margin-top:18px"><a class="btn btn-primary" href="Adebayo_Afeez_CV.pdf" download>Download My CV (PDF) ↓</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <span class="kicker">Get in touch</span>
+      <h2>Ready to start learning or shopping?</h2>
+      <p>Enquire about Hotkek_ Lessons, Hotkek_ Wears, or my Result Checker App development services.</p>
+      <div class="contact-item"><div class="contact-icon">✉</div><div><small>Email</small><a href="mailto:adebayoafeez0@gmail.com"><strong>adebayoafeez0@gmail.com</strong></a></div></div>
+      <div class="contact-item"><div class="contact-icon">☎</div><div><small>WhatsApp</small><a href="https://wa.me/2348112168294" target="_blank"><strong>08112168294</strong></a></div></div>
+      <div class="contact-item"><div class="contact-icon">⌖</div><div><small>Location</small><strong>Lagos State, Nigeria</strong></div></div>
+      <div class="contact-item"><div class="contact-icon">₦</div><div><small>Training rates</small><strong>₦5,000/hour · ₦100,000/course</strong></div></div>
+      <div class="contact-item"><div class="contact-icon">📄</div><div><small>My CV</small><a href="Adebayo_Afeez_CV.pdf" target="_blank"><strong>Download CV PDF</strong></a></div></div>
+      <div class="social-row">
+        <a class="social-btn" href="https://github.com/hotkek-online" target="_blank">GitHub: hotkek-online</a>
+        <a class="social-btn" href="https://www.linkedin.com/in/adebayo-afeez-90b252147" target="_blank">LinkedIn</a>
+        <a class="social-btn" href="https://x.com/hotkek_online_" target="_blank">X: hotkek_online_</a>
+        <a class="social-btn" href="Adebayo_Afeez_CV.pdf" target="_blank" style="background:var(--gold);color:#2f1c42">Download CV</a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter full name" required></div>
+      <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="course">What are you interested in?</label><select id="course" name="course" required><option value="">Choose</option><option>Web Development</option><option>App Development - Like Result Checker App</option><option>Data Analysis</option><option>Digital Marketing</option><option>Cybersecurity</option><option>JAMB & WAEC CBT Preparation</option><option>Hotkek_Wears - Fashion</option><option>Quick Class</option><option>Full Course</option></select></div>
+      <div class="field"><label for="message">Your message</label><textarea id="message" name="message" placeholder="What would you like to learn or build?"></textarea></div>
+      <button class="btn btn-primary" type="submit">Prepare email enquiry ↗</button>
+      <p class="form-note">Opens your email app. Or WhatsApp me: 08112168294 | CV: Adebayo_Afeez_CV.pdf</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container footer-row">
+    <div><div class="footer-brand">Hotkek_ Online</div><small>EdTech Web Developer | Owner of Hotkek_ Lessons & Hotkek_ Wears • CAC Since 2021</small></div>
+    <small>© <span id="year"></span> Hotkek_ Online - Builder of City Hill College Result Checker App</small>
+    <small><a href="https://wa.me/2348112168294" style="color:var(--gold)">WhatsApp</a> • <a href="https://github.com/hotkek-online" style="color:var(--gold)">GitHub</a> • <a href="https://www.linkedin.com/in/adebayo-afeez-90b252147" style="color:var(--gold)">LinkedIn</a> • <a href="https://x.com/hotkek_online_" style="color:var(--gold)">X</a> • <a href="Adebayo_Afeez_CV.pdf" style="color:var(--gold)">CV</a></small>
+  </div>
+</footer>
+<script>
+const menuButton=document.getElementById("menuButton");const navLinks=document.getElementById("navLinks");
+menuButton.addEventListener("click",()=>{const open=navLinks.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(open));menuButton.textContent=open?"✕":"☰"});
+navLinks.querySelectorAll("a").forEach(l=>{l.addEventListener("click",()=>{navLinks.classList.remove("open");menuButton.setAttribute("aria-expanded","false");menuButton.textContent="☰"})});
+document.querySelectorAll("[data-course]").forEach(link=>{link.addEventListener("click",()=>{const s=link.dataset.course;const c=document.getElementById("course");c.value=s.includes("Quick")?"Quick Class":"Full Course"})});
+document.getElementById("contactForm").addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(e.target);const name=fd.get("name");const email=fd.get("email");const course=fd.get("course");const message=fd.get("message")||"";const subject=encodeURIComponent("Hotkek_ Online Enquiry from "+name+" - "+course);const body=encodeURIComponent("Name: "+name+"\nEmail: "+email+"\nInterest: "+course+"\nWhatsApp: 08112168294\n\nMessage:\n"+message+"\n\n---\nHotkek_ Online - EdTech Web Developer | Builder of City Hill College Result Checker App\nOwner of Hotkek_ Lessons & Hotkek_ Wears (CAC Since 2021)\nGitHub: hotkek-online | LinkedIn: Adebayo Afeez | X: hotkek_online_ | CV: Adebayo_Afeez_CV.pdf");window.location.href="mailto:adebayoafeez0@gmail.com?subject="+subject+"&body="+body});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
